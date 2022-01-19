@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+        A stream of data is received and needs to be reversed.
+
+        Each segment is 8 bits long, meaning the order of these segments needs to be reversed, for example:
+        
+        11111111  00000000  00001111  10101010
+         (byte1)   (byte2)   (byte3)   (byte4)
+        
+        should become:
+        
+        10101010  00001111  00000000  11111111
+         (byte4)   (byte3)   (byte2)   (byte1)
+    </pre>
+    <script src="app.js"></script>
+  </body>
+</html>
